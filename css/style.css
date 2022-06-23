@@ -1,0 +1,228 @@
+/*Mobile First - 480px */
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(235, 238, 238);
+}
+header{
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5em;
+    background: rgb(72, 171, 228);
+}
+#hamburgerMenu{
+    font-weight: 800;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+@keyframes fadeInAnim{
+    0%{opacity: 0;};
+    100%{opacity: 1;}
+}
+#aboutMe{
+    margin-top: 5%;
+    padding: 0 5%;
+    display: flex;
+    animation: fadeInAnim 1.5s forwards;
+    flex-direction: column;
+    align-items: center;
+}
+#myPhoto{
+    width: 60vw;
+}
+.textParag{
+    color: rgb(64, 68, 70);
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.titles{
+    font-size: 3em;
+    color: rgb(24, 233, 233);
+    text-shadow: 0px 0px 2px #000, 0px 0px 4px #000;
+}
+#photo{
+    width: 75vw;
+}
+.fadeOut{
+    opacity: 0;
+    transform: translateY(50px);
+}
+.fadeIn{
+    opacity: 1;
+    transform: translateY(0px);
+}
+#skills{
+    transition: all 0.5s;
+}
+.imgSkillsCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.littleImages{
+    margin: 0 5px;
+    width: calc(33.33% - 15px);
+    filter: drop-shadow(0px 0px 6px rgb(87, 88, 88))
+}
+#progressBarHTML{
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-bottom: 15%;
+    width: 50vw;
+    height: 2vh;
+}
+@keyframes htmlBar{
+    0%{width: 1%;}
+    100%{width: 80%;}
+}
+#lineProgressBarHTML{
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    animation: htmlBar 2s forwards;
+    height: 100%;
+    background: rgb(228, 130, 18);
+}
+#progressBarCSS{
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-bottom: 15%;
+    width: 50vw;
+    height: 2vh;
+}
+@keyframes CSSBar{
+    0%{width: 1%;}
+    100%{width: 75%;}
+}
+#lineProgressBarCSS{
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    animation: CSSBar 2s forwards;
+    height: 100%;
+    background: rgb(72, 171, 228);
+}
+#progressBarJS{
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-bottom: 15%;
+    width: 50vw;
+    height: 2vh;
+}
+@keyframes JSBar{
+    0%{width: 1%;}
+    100%{width: 60%;}
+}
+#lineProgressBarJS{
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    animation: JSBar 2s forwards;
+    height: 100%;
+    background: rgb(194, 206, 28);
+}
+#learningNow{
+    transition: all 0.5s;
+}
+#hobbies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+}
+.hobbieCont{
+    width: calc(27% - 6px);
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px rgba(153, 148, 148, 0.603) solid;
+    transition: all 0.2s;
+}
+.hobbieCont:hover{
+    background: rgb(72, 171, 228);
+}
+.hobbieImg{
+    width: 100%;
+}
+.hobbiesSubtitle{
+    width: 33.33%;
+    font-weight: bolder;
+    color: #000;
+}
+#academicFormation{
+    width: 100%;
+    transition: all 0.5s;
+}
+.cursosCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.cursosImg{
+    width: 40vw;
+}
+.cursoParag{
+    font-size: 1.5em;
+    margin-left: 15%;
+}
+#recentProjects{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+#recentProjects article:nth-child(3){
+    flex-direction: row-reverse;
+}
+.projectsCont{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.projectsImg{
+    width: 50vw;
+    box-shadow: 2px 2px 6px;
+}
+.projectParag{
+    margin: 0 15px;
+}
+#socialMedia{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+fieldset{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+label{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+input{
+    width: 30vw;
+    margin: 0px 5px;
+}
+#campoMsg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+textarea{
+    width: 100%;
+    height: 20vh;
+    resize: none;
+}
