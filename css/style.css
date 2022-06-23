@@ -7,15 +7,53 @@ html,body{
 }
 header{
     padding: 0 2%;
+    height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     font-size: 1.5em;
     background: rgb(72, 171, 228);
+    transition: all 0.5s;
+    overflow: hidden;
+}
+#logo{
+    display: none;
+    width: 50vw;
+    font-size: 1.2em;
+    color: white;
+    margin: 25px 0;
+    display: initial;
+    transition: all 0.8s;
+}
+#navBar{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.7em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: all 1s;
+    z-index: 0;
+}
+li{
+    transition: all 1s;
+    transform: translateX(800px);
+}
+a{
+    text-decoration: none;
+    margin-right: 5px;
+}
+a:visited, a:link{
+    color: white;
 }
 #hamburgerMenu{
+    margin: 0;
+    font-size: 1.5em;
     font-weight: 800;
     cursor: pointer;
+    color: white;
+    z-index: 1;
 }
 main{
     display: flex;
