@@ -4,6 +4,7 @@ html,body{
     margin: 0;
     padding: 0;
     background: rgb(235, 238, 238);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header{
     padding: 0 2%;
@@ -18,31 +19,28 @@ header{
 }
 #logo{
     display: none;
-    width: 50vw;
-    font-size: 1.2em;
-    color: white;
-    margin: 25px 0;
-    display: initial;
-    transition: all 0.8s;
 }
 #navBar{
+    width: 80vw;
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
     font-size: 0.7em;
     list-style: none;
+    text-shadow: #000 1px 1px;
     margin: 0;
     padding: 0;
     transition: all 1s;
-    z-index: 0;
+    z-index: 1;
+    transform: translateX(3000px);
 }
 li{
+    font-size: 19px;
     transition: all 1s;
-    transform: translateX(800px);
 }
 a{
     text-decoration: none;
-    margin-right: 5px;
+    margin: 0 5px;
 }
 a:visited, a:link{
     color: white;
@@ -53,7 +51,8 @@ a:visited, a:link{
     font-weight: 800;
     cursor: pointer;
     color: white;
-    z-index: 1;
+    text-shadow: #000 1px 1px;
+    z-index: 2;
 }
 main{
     display: flex;
@@ -75,6 +74,7 @@ main{
 }
 #myPhoto{
     width: 60vw;
+    border-radius: 20px;
 }
 .textParag{
     color: rgb(64, 68, 70);
@@ -84,7 +84,7 @@ main{
 .titles{
     font-size: 3em;
     color: rgb(24, 233, 233);
-    text-shadow: 0px 0px 2px #000, 0px 0px 4px #000;
+    text-shadow: 0px 0px 2px #000, 0px 0px 4px rgb(180, 180, 180);
 }
 #photo{
     width: 75vw;
@@ -105,16 +105,17 @@ main{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 .littleImages{
     margin: 0 5px;
     width: calc(33.33% - 15px);
     filter: drop-shadow(0px 0px 6px rgb(87, 88, 88))
 }
-#progressBarHTML{
+.progressBar{
     border: 2px solid #000;
     border-radius: 5px;
-    margin-bottom: 15%;
+    margin-right: 3%;
     width: 50vw;
     height: 2vh;
 }
@@ -127,15 +128,9 @@ main{
     margin: 0;
     padding: 0;
     animation: htmlBar 2s forwards;
+    animation-delay: 1.5s;
     height: 100%;
     background: rgb(228, 130, 18);
-}
-#progressBarCSS{
-    border: 2px solid #000;
-    border-radius: 5px;
-    margin-bottom: 15%;
-    width: 50vw;
-    height: 2vh;
 }
 @keyframes CSSBar{
     0%{width: 1%;}
@@ -146,15 +141,9 @@ main{
     margin: 0;
     padding: 0;
     animation: CSSBar 2s forwards;
+    animation-delay: 1.5s;
     height: 100%;
     background: rgb(72, 171, 228);
-}
-#progressBarJS{
-    border: 2px solid #000;
-    border-radius: 5px;
-    margin-bottom: 15%;
-    width: 50vw;
-    height: 2vh;
 }
 @keyframes JSBar{
     0%{width: 1%;}
@@ -165,54 +154,12 @@ main{
     margin: 0;
     padding: 0;
     animation: JSBar 2s forwards;
+    animation-delay: 1.5s;
     height: 100%;
     background: rgb(194, 206, 28);
 }
 #learningNow{
     transition: all 0.5s;
-}
-#hobbies{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    transition: all 0.5s;
-}
-.hobbieCont{
-    width: calc(27% - 6px);
-    padding: 1%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 3px rgba(153, 148, 148, 0.603) solid;
-    transition: all 0.2s;
-}
-.hobbieCont:hover{
-    background: rgb(72, 171, 228);
-}
-.hobbieImg{
-    width: 100%;
-}
-.hobbiesSubtitle{
-    width: 33.33%;
-    font-weight: bolder;
-    color: #000;
-}
-#academicFormation{
-    width: 100%;
-    transition: all 0.5s;
-}
-.cursosCont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.cursosImg{
-    width: 40vw;
-}
-.cursoParag{
-    font-size: 1.5em;
-    margin-left: 15%;
 }
 #recentProjects{
     display: flex;
@@ -227,6 +174,10 @@ main{
     align-items: center;
     margin-bottom: 50px;
 }
+article:nth-child(1){
+    display: flex;
+    flex-direction: row-reverse;
+}
 .projectsImg{
     width: 50vw;
     box-shadow: 2px 2px 6px;
@@ -234,33 +185,53 @@ main{
 .projectParag{
     margin: 0 15px;
 }
+#contactTitle{
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+#whatsappCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    transition: all 0.3s;
+    padding: 2%;
+}
+#whatsappCard:hover{
+    background-color: rgb(72, 171, 228);
+    color: white; 
+}
+#gmailCard{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    transition: all 0.3s;
+    padding: 2%;
+}
+#gmailCard:hover{
+    background-color: rgb(72, 171, 228);
+    color: white; 
+}
+.contactParag{
+    margin: 30px;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.imgContact{
+    width: 30vw;
+    height: 15vh;
+    border-radius: 50%;
+}
+.mediaIcons{
+    width: 10vw;
+}
 #socialMedia{
     display: flex;
     margin-top: 25px;
     justify-content: center;
     align-items: center;
     height: 5vh;
-}
-fieldset{
-    display: flex;
-    justify-content: space-between;
-    border: none;
-}
-label{
-    font-weight: bold;
-    font-size: 1.2em;
-}
-input{
-    width: 30vw;
-    margin: 0px 5px;
-}
-#campoMsg{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-textarea{
-    width: 100%;
-    height: 20vh;
-    resize: none;
 }

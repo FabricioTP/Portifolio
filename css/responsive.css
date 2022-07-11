@@ -1,0 +1,280 @@
+@media screen and (min-width:760px) {
+    html{
+        font-size: 22px;
+    }
+    header{
+        justify-content: flex-end;
+    }
+    #navBar{
+        font-size: 0.8em;
+    }
+    li{
+        font-size: 25px;
+        transition: all 0.5s;
+    }
+    li:hover{
+        filter: drop-shadow(0px 3px 0px #000);
+    }
+    .titles{
+        font-size: 2.5em;
+    }
+    #aboutMe{
+        display: grid;
+        grid-template-areas: 
+        "hello hello hello"
+        "photo text text"
+        "photo text text";
+    }
+    #aboutMe :nth-child(1){
+        grid-area: hello;
+    }
+    #aboutMe :nth-child(2){
+        width: 40vw;
+        grid-area: photo;
+    }
+    #aboutMe :nth-child(3){
+        text-align: start;
+        margin-left: 10%;
+        grid-area: text;
+    }
+    #skills{
+        display: grid;
+        grid-template-areas:
+        "html html css css"
+        "js js js js";
+        justify-items: center;
+        align-items: center;
+    }
+    .imgSkillsCont{
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 50vh;
+    }
+    .imgSkillsCont:nth-child(1){
+        grid-area: html;
+    }
+    .imgSkillsCont:nth-child(2){
+        grid-area: css;
+    }
+    .imgSkillsCont:nth-child(3){
+        grid-area: js;
+    }
+    .skillsParag{
+        width: 80%;
+        font-size: 1.1em;
+    }
+    .imgSkillsCont:nth-child(3){
+        width: 50vw;
+    }
+    .progressBar{
+        width: 70%;
+        margin: 0;
+    }
+    .littleImages{
+        width: 10vh;
+    }
+    .porcentParag{
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+    }
+    #nextSkillImg{
+        width: 20vw;
+    }
+    .textParag:nth-child(2){
+        font-size: 1.3em;
+        width: 80vw;
+    }
+    .imgContactCards{
+        width: 10vw;
+        height: 15vh;
+        border-radius: 50%;
+    }
+    .mediaIcons{
+        height: 5vh;
+    }
+}
+@media screen and (min-width:1280px) {
+    html,body{
+        height: 100%;
+    }
+    main{
+        flex-direction: row;
+        justify-content: center;
+        height: 80%;
+    }
+    #logo{
+        display: flex;
+        justify-self: end;
+        font-size: 1.3em;
+        width: 20vw;
+        margin-right: 30%;
+        color:white;
+        text-shadow: #000 1px 1px;
+    }
+    #aboutMe{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-areas: 
+        "hello hello"
+        "photo text"
+        "photo text";
+    }
+    #skillsSection{
+        display: none;
+    }
+    #nextSkillSection{
+        display: none;
+    }
+    #projectsSection{
+        width: 80%;
+        height: 95%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #contact{
+        height: 100%;
+        display: none;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    header{
+        justify-content: space-between;
+    }
+    li{
+        margin-left: 2%;
+        font-size: 1em;
+    }
+    #aboutMe :nth-child(1){
+        grid-area: hello;
+    }
+    #aboutMe :nth-child(2){
+        width: 22vw;
+        grid-area: photo;
+    }
+    #aboutMe :nth-child(3){
+        width: 30vw;
+        text-align: start;
+        margin-left: 10%;
+        grid-area: text;
+    }
+    #skills{
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .imgSkillsCont{
+        flex-direction: row;
+        justify-content: center;
+        padding: 5%;
+        height: 50vh;
+    }
+    .imgSkillsCont{
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 43vh;
+    }
+    .imgSkillsCont:nth-child(1){
+        grid-area: initial;
+    }
+    .imgSkillsCont:nth-child(2){
+        grid-area: initial;
+    }
+    .imgSkillsCont:nth-child(3){
+        grid-area: initial;
+    }
+    .skillsParag{
+        font-size: 1em;
+    }
+    .imgSkillsCont:nth-child(3){
+        width: initial;
+    }
+    .porcentParag{
+        font-size: 1em;
+        margin-left: 5%;
+        padding: 0;
+    }
+    #nextSkillImg{
+        width:15vw
+    }
+    .projectsCont{
+        display: flex;
+        width: 50vw;
+        height: 20vh;
+    }
+    .projectsImg{
+        width: 80%;
+        height: 100%;
+    }
+    #contactTitle{
+        display: flex;
+        justify-content: center;
+        margin: 3%;
+    }
+    #cardsContactCont{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+    }
+    #whatsappCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0em;
+        width: 15vw;
+        height: 30vh;
+        transition: all 0.3s;
+        padding: 2%;
+    }
+    #whatsappCard:hover{
+        width: 30vw;
+        font-size: 1em;
+        transform: translateY(-20%);
+        background-color: rgb(72, 171, 228);
+        -webkit-box-shadow: 0px 153px 50px -72px rgba(0,0,0,0.59);
+        -moz-box-shadow: 0px 153px 50px -72px rgba(0,0,0,0.59);
+        box-shadow: 0px 153px 50px -72px rgba(0,0,0,0.59);
+        color: white; 
+    }
+    #gmailCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0em;
+        width: 15vw;
+        height: 30vh;
+        transition: all 0.3s;
+        padding: 2%;
+    }
+    #gmailCard:hover{
+        width: 30vw;
+        font-size: 1em;
+        transform: translateY(-20%);
+        background-color: rgb(72, 171, 228);
+        -webkit-box-shadow: 0px 153px 50px -72px rgba(0,0,0,0.59);
+        -moz-box-shadow: 0px 153px 50px -72px rgba(0,0,0,0.59);
+        box-shadow: 0px 153px 50px -72px rgba(0,0,0,0.59);
+        color: white; 
+        background-color: rgb(72, 171, 228);
+        color: white; 
+    }
+    .contactParag{
+        margin: 30px;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+    .imgContact{
+        width: 15vw;
+        height: 15vh;
+        border-radius: 50%;
+    }
+    #socialMedia{
+        height: 100%;
+    }
+}

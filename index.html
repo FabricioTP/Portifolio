@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabricio Teixeira || Front-end Developer</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
+        <h1 id="logo">Front-end Developer</h1>
         <ul id="navBar"">
             <li><a href="#aboutMe">Sobre</a></li>
             <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#learningNow">Prox.Habilidade</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#academicFormation">Cursos</a></li>
+            <li><a href="#learningNow">Prox.Habilidade</a></li> 
             <li><a href="#recentProjects">Projetos</a></li>
             <li><a href="#contact">Contato</a></li>
         </ul>
@@ -31,70 +32,43 @@
                 :D
             </p>
         </section>
-        <section>
+        <section id="skillsSection">
             <h1 class="titles">Habilidades</h1>
             <div id="skills" class="fadeOut">
-                <div class="imgSkillsCont">
                     <div class="imgSkillsCont">
                         <img class="littleImages" src="https://logodownload.org/wp-content/uploads/2016/10/html5-logo.png" alt="html5">
-                        <p class="textParag">HTML5 é uma linguagem de marcação de texto, por meio dela, eu montarei o esqueleto da sua aplicação da forma mais moderna existente no mercado.</p>
-                        <div id="progressBarHTML">
-                            <div id="lineProgressBarHTML"></div><p class="textParag">80%</p>
+                        <p class="skillsParag">HTML5 é uma linguagem de marcação de texto, por meio dela, eu montarei o esqueleto da sua aplicação da forma mais moderna existente no mercado.</p>
+                        <div class="progressBar">
+                            <div id="lineProgressBarHTML"></div>
                         </div>
+                        <p class="porcentParag">80%</p>
                     </div>
                     <div class="imgSkillsCont">
                         <img class="littleImages" src="https://logodownload.org/wp-content/uploads/2017/04/css-3-logo.png" alt="cs3">
-                        <p class="textParag">CSS3 é a linguagem usada na web para estilização de Web Apps, utilizo os recursos mais modernos no mercado. Para que seu site seja melhor ranqueado em mecanismos de busca e melhor escalonável</p>
-                        <div id="progressBarCSS">
-                            <div id="lineProgressBarCSS"></div><p class="textParag">75%</p>
+                        <p class="skillsParag">CSS3 é a linguagem usada na web para estilização de Web Apps, utilizo os recursos mais modernos no mercado. Para que seu site seja melhor ranqueado em mecanismos de busca e melhor escalonável</p>
+                        <div class="progressBar">
+                            <div id="lineProgressBarCSS"></div>
                         </div>
+                        <p class="porcentParag">75%</p>
                     </div>
                     <div class="imgSkillsCont">
                         <img class="littleImages" src="https://logodownload.org/wp-content/uploads/2022/04/javascript-logo.png" alt="javascript">
-                        <p class="textParag">Javascript é a linguagem usada para criar as regras de negócio/funcionamento de páginas web. Utilizo a versão ES6, com as funções e práticas mais eficientes do mercado.</p>
-                        <div id="progressBarJS">
-                            <div id="lineProgressBarJS"></div><p class="textParag">60%</p>
+                        <p class="skillsParag">Javascript é a linguagem usada para criar as regras de negócio/funcionamento de páginas web. Utilizo a versão ES6, com as funções e práticas mais eficientes do mercado.</p>
+                        <div class="progressBar">
+                            <div id="lineProgressBarJS"></div>
                         </div>
+                        <p class="porcentParag">60%</p>
                     </div>
-                </div>
             </div>
         </section>
-        <section>
+        <section id="nextSkillSection">
             <h1 class="titles">Próxima habilidade</h1>
             <div id="learningNow" class="fadeOut">
-                <img class="littleImages"src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="typescript">
+                <img id="nextSkillImg" class="littleImages"src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="typescript">
                 <p class="textParag">Com Typescript, poderei construir aplicações ainda mais robustas e estáveis para seu negócio. Aguarde, em breve trarei essa novidade para desenvolver nossas aplicações com cada vez mais qualidade.</p>
             </div>
         </section>
-        <section>
-            <h1 class="titles">Hobbies</h1>
-            <div id="hobbies" class="fadeOut">
-                <div class="hobbieCont">
-                    <img class="hobbieImg" src="./img/ler.png" alt="ler">
-                    <p class="hobbiesSubtitle">Ler</p>
-                </div>
-                <div class="hobbieCont">
-                    <img class="hobbieImg" src="./img/malhar.png" alt="malhar" >
-                    <p class="hobbiesSubtitle">Malhar</p>
-                </div>
-                <div class="hobbieCont">
-                    <img class="hobbieImg" src="./img/ouvirmusica.png" alt="ouvir musica">
-                    <p class="hobbiesSubtitle">Ouvir musica</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h1 class="titles">Cursos</h1>
-            <div id="academicFormation" class="fadeOut">
-                <article class="cursosCont">
-                    <img class="cursosImg"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATQAAACjCAMAAAAzSxLiAAAAflBMVEUAAAD////+/v6cnJzu7u7o6Oj29vYvLy+ioqLx8fGDg4P6+voGBgaWlpa3t7cfHx/e3t6urq5wcHBRUVFCQkJMTEwlJSVWVlYUFBQ6OjpoaGiBgYHHx8fg4OA1NTXV1dXAwMCMjIwYGBh5eXldXV1GRkapqamzs7NiYmJsbGywikVdAAATO0lEQVR4nO2diZaiOhCGTWRHFBfAhVUU9f1fcBLIxg62bdM9/ufcOy0CymclVUkqyWz20Ucf/S3dJHmApOD+0190QlpEYJjM8Ke/6nTkynAQMwjin/6q09HBHApNXv30d52MtmAYNACVy1MfcHgkWnZb3rK5cf8rJXwzGBpIRt98m/iKYMnQVGLj2nr2ypoX0tKuL6zRs7bC0Ts92qHSBV+SNQwZljby1qfIxKQgBMUPk/8FFP/Rcn4oMbpO+11j9n0M4ag25AGM1puOVDzU0gC4jbpxolNMovIjQbMlqTI7LWi/75LeqcRgPuQBTqMeoEP2UGQAxCNu60QYUONt0GHoN9VuDBo6w2q985L8yqOhwZdBW8j9n0blD7+tAduQESj6pn4RtzQITa/t1hOAdpAGl04QDb6r1lAwKw/QUMEIxRO2F9AJQLsow6HZQ2+qgVJFCfNXsHqs5oxFaO0FdALQjMHIhkPTeNEsDA5KQRBIBAZ7hNozCNA6CmgPtC4beJX3HOR1iAYWzwf/5rjOl7XN9qCq6sFL15JQ1UFgVuImtVy/tvxGfZamSG1SusK/MVoPjzgGOoJQp+djPn65GbGJeG0Hgb0ovVmChs6aN96/G1qX332Z/MHIhkKLqaFhH3msvX0yqbGhf7LSW2VLQ283hrgTgDYi4gDxkBs6gBkSkA8NJ3gmOwOCUh9ApXjC5vpgAtCGI4PDWgQRhxY0d4vsePkFsfhGBRqoWmKhn4cWDq/Smh+hqiOvsUCTnWHdeQHVxRJYgwab2qA/D80ZA625Yi4r5obW3imy5ieJ96xCw8a6r13889CuY6AN6BpaUd/YUiEVQnToWVL5MDMx+n7dun8e2moMtAFhzonbUEPjksnipwmxWjnkKP4HayHuz0Ob2d1tRPEplAHjUbyjqaNzZzY7mwzamh/l0KSYkZEXlWsnAM3q6o0QiCHp7X2uVC4rYD1eg/ckRhyKAG2m0M+tdX1OANoiqlErmosQVjsqdLf3bjxIM7sHFAx2os571kRoG+ZgzYqBTwDaLLQJoDIhU9ElWQ5sO4rim5YYm7u3679Zykqn3n3iQWHlk1daIjShfSeXL50CtJl7o5ykIIqXa21uGenm6G13oXseeS+NPWlf415iD8n7OgRoi9lCbymgk4CGFIZqPR56Rqw50BvT+aAeVJSg4TCZltBSAZ0KtJcpaLCfZvGuHN4NUIY2u3EPKl7516CdufPsC09YQCfEJhVoKx4CiwW0D5p2VptVjV0mopAOOEDYNy77aKjnK9BYGxX9T/DFfZ2Q0GyW3jpU831aubu2BjjTTqfQlL6Y7sKhMW9ThYb5EGo2d0k9lgZpMFCV/rLx9bLOq/DgbC/3TWok1lzL1svYj+xAIpFmb3Wx1RmJPsA8hURi4V8N2iogrSkIluzKZwdWvgpt76rqAeM5Pk4ny8rWiE0U5Ll7kq4r9TwiWAyRRD3VgsMsTeqHxgC1Q5t51NSEcO5HoKlJHMm60nxnEuYWbYLam3pHigUWgwYGQBtgabkHJQWUJXq9H9rikSel5HbT1BDoVG8/x8stbXa2GVzab/x2aEWGxQhOFfXkDW3HWNogaKIHJVFML7TXOoLFuqnQDRfsG48a5T2pZNYYaYLGRp4hkAoP+qyltWeHdGnvfwlZ/oDdn8DjNPCKOK2QzDxo0fXWBy0+bhr16O+kqWsRf5kZULo/4rUtAqKjST0ozLMB39qM0r7ODJg9MQdve/Z1jQ9oe1a/OCz6m94Kzfw6Mwh7THx4LwfvF2/r5eDibVB87juhDU5I7oSmdn/IC/vTBNExeZiP1rwTmvUSaD1O8WU9t+VqQGOckKt9JzTtJdB6uryFMYJuB39iA/HNYwRlaAveBl2/FdrtHcVTGI3qjoOXvBw3jkZVHM6WeVBwv7GP+H5oNJP8a9D6esV5/d6ZNrnnpbN53LPqpTPeSURH/94BbUwiWqt64rTSCHvXGF4CGqq0Lmh74pch+e83QetNIF3xofOOc1c8nmvM5ahDw7UlT0d6F7T90GmdnepPtmK/DYTt8a2QVSxWfV3Q6o7sDdBW0Qv8wIAUGD7wBsy2SNjhRawlP60BmhA4vw2aG7wAWl8n5KxIcyhORgW0eayZJVqB1kzIJmjb6rf5fmjhiJkpbcwG5cRvWZojqgKbbG0n8XoJlE7ohlbN1XkDtF1L//YoaIMmL/jMjlAAX+/sSJUB2d2N0Cpz394AbUSeaBszCAd90kEBgp/zyyX6IkzOqyWH9kHzSn0Ob4DmfRFZf5DPtOHTK/AfspZ6B9UNd5c0k0pdx9UR5T5o5QLa1gnZMlaMpYzsvL181dIg1AfkWuUSe+7yv0w5CGSJTTNueuhB0GYB6IXW8Zh9DeKavtoz1DlvtaolKBUjNrZRvl+ty60f2lUBLdCHzPEaDe1E+wlGDtvRR2wNIBqV9Yx54TfrueL90GbJW6E5Dd6TDAx3TQHm2elSf8atIAt2lhMU+TbEyQOgCSHuG6DNFvv92XUPO+/yOCXzdZ6kIUu6WI4E8aOKFES+ll5HZv05UeuvkU/O65zD3gGNh07vgFbXYqXutsfUsLI4kisTjKGpB/4ys4yNt3tu4Ze9pTeOsuYOtTnlbwg0RIcFz2Vo/XXOK6BVtXfDPPktdF+TSzpLoiInBPLqFP1r+m0tWL4uh94x6sW7a8RacdC6HPC5NWzeq4WT+Lpusi9t6lJstAcuK0sjsjqgHTJyUibazZEe7VRvht1EtLg+knmGNU+OQyO9jz7681q4B+fywKmgFi4gt5JwgdEsy0oSI02Px8vWOYTuf7xCmru7nObLSEZhmGIOWFMOQtSWVXRdkvDykLbtxzdtnpw2R8+5HkJ1tZ9oMvkrlckmo8GC/kqEzl6TbNrW5pUiyXbk+2NXAftt2oGW5x8lnnxb3GrI/PVfrPsLhtJrCMesaPUb9YpMl7r+OLS4n8AHWlUjlt77QCNSBy72+4EmaKt/oI1W+i1+4I9D+x7n+ceh3foBfKBV9T3O849D+x5mfxvaiBWXPtCovpx+8D9CS74F2h/f9uJ7Wp6/b4mQUXpJPnKNWSlz/c9JfUFqbQO0vqlOv1vOiPXLhzMbmDj6Oi3O+/PYFbWe1/EbkJXn4gyVc7Is4/JkgoMWIfUMh+/3+87Xw/Vy54lHCPTRdnZd0rGdqG1DlU6lJoBm93D8SgGltTo9U1xbZ5TWoDMxbCywfE+ZbFRmGlaiUN5g3CYjTDsTKD3QdABkYVKgZ8JouKmVrFKuPTUbmRo1QEWvkuMnNj7AM3KkW3pxNhlOkg2eGTbVh0ATQ25PAcOh7UxxgXo8oG5ptzxjT5akjtHi5hU/AMv0VSTZT7Y98zsbhXv0liRpb4V7qpbd5zdqEDRx3tEoaKfWZZMWK/XgbO/H9JRYlqatb3G+DlOgS50TMUwp8peacXl2N7GVXLIAiy4NMU7DLE1YEXUUtKx3ralGLc7nVRiG6s5huqqh+rQH4rJAeXl4f8yONkxDoJmx8POMghY885W+U1FlnTW8flX+s3oe+mex8/JQYu8YWbzUHiLerXXz10YRaQjQVCPzl/PqkjLY0rBRU88uQsuvsMhcmYt3Yea48y64wnHQ7+p53nRS/M6IUakmXESk6gGoLbaRcuNY3Fi6CcsBTakTi3HkwKC5tDVd2ZUVQ8N9OibBzqGF7Iq87Yde2YTmFgJlf85k4hSfqWu/R+g5Ku5ySZbxAuCUgsLlnU1UdcrIWUFmlhnIZ7bIEswDCQotDMhh9HZp75EcGu7cJwWUQcPpzuSKfK3XfUAzUdBf5n12AIqCp2Hq5nTyU4xa39ucHEH/KEBZW0c8ZVc74jKz0CCpy/GMGv+CaKubmwgN1YjSA8EIEfrSBqMFtLNECyiDhq6Q7/vC4PJ1jDy6W0uWL0yz3zroh7W32+10Ns7UamafknUkAGjoy4yK7aPwEHfphyfQNpAtxbYsp3MX0GYXRCQ/gUJLOdyYbE2VIHouzgyiH4+qkGk5AvRzVlqq6MHzxwHiSqNUWlE+j6i8lI4TaGvuVbblX4NAw2fkKCi0JfcNF/pVIvyHGjDfsgLPhRzfpg5oTRs7WAWVdXUVQAIN1UfUq7hKafk2Cg2vWoQtkELT+Y7UCxrsHHQAj8juaCg8OWj14nlixdPkbjXcrH0suYAWgcqiAgQacnfOrpCDnJ5wAoN2NPO59RQaMuctuWLHFmfboBaO0DKZHLQuR8Djd4NvGptDkyu+kUJDwYFCBQmlQgwatu2IQXPFK/iKdngyJV/dbnLQPADlWsiRF1gEjVqahWf7aAmSDwi0yq4PBbRFpctGOIFDw2U4odDU8hW0QM9LyxZMDhoObku+fG+z4JZa2lWHdDM/UqcFoFLfUUsDyuPIJZwgQLubUHG2BbQ9+s027PwH+SV2efowa6hMDhrOiyjNGXZoM4pDs7izmBfQ/Oo+kgSaVFmFgkuAhutRe6cU/WmodNa6Zs44qjX5FibTg4aIyKKpsQY7h7bm1T4JOaxqZyWB5lctkEmEdkZ+JCaOwK7WjsXnJThaoxHPCsVp04Km6iVXkEAIi+cuQSN25RLviRuRpccg0KzWLhIR2uyaV2A5tHk9gr4XN/GZfZ/Bcz2j3yjcIopIF7k7552QHFpCl1dzcY4ThobXj4pIIO9iOyXQVEnYt9ARS2oJWrH4RA4NL1DM2hYeviKUgIJNbGGyQBGdXN9E82eV4YHSOL14D9yhwFYM4N4Tr/EduwvXkIGtF/Uznv1gp+rZ9eYyjlVp2xOPFEWnnRp6SSSLC6OUoe3xGt9F2xP3FfvpobgC3yOm7a+ELfmPjE7PjAHb1L1Rlil4/ZgeFeK0fKdk3H8cuRFxagYPFfAB1jVk8TspZWhQjEAOyHhID1Am9ELvcP3AotqYFvZLPvw0sRHww01WSNc5z2dQJD56lOL5W1Ba72drhfzgTpQvd6JIMbYGWafLMxyjfG6yqQeW2DO7kqXSuoFzXffP5SukIMFVrC7T3yoMJPJpd1tXlM6d535CZ++UWMZR9P6Hw4HXvvu7kWxw5eUeWIfP4WEkp3txSSicvNsYiXGsDiSi21Vec5993SSGUcxjdncHXhW6/KLd5fKZ5/zRRx999NFHH3300UcfffTRR1SGZT2TXvnHZcSCln41CSwod4s9rSTL/tDUo8rU5moyng0GrDU/QLa4t9mv1xoAXWaSqoS+Bi2MaR+1r+vTyvz5knCijxpSHaqjPl+DdgIx+etwvU4n/fPLWlfHfcv6GjR/Qjmfr9S6aYVpri9BW8n/GTR1m/fy90ILt46Y+nfYCsOdW6UFmuo49UDGLd9pymqEpq7zUb0opdB2ssSc30OSKIq0mOSrZxjB4rTUi5G4NR4z2W8yBecgy9JpNoskWaL7eV1IOveS5Gq4kXSZraz82uCJaUo/oCZoVzySnk84uskFtKvJhx03LJMgf3oT88VD4dfiFX5pH/LTSC57UgxukhskJr3ILD7YDcBJjQCZsfQrorkmRyABoGje9YinDxR7Al2VBmh4Uzg/uWzTTMfQHBCtjcvVSYL8BGed+ch0smyNLeoCyEZdxRi85xl4AfmcmmuDm43M87SxAoT5N8wkR9DmfPJQXh9pyCqKYcswgO3QUvSEpDS5+DqXLk2/UyDYF2ewOs0l0FzAtoPQ0A+CP8bFOQp28YH2lOZYtGsNoMlTPnFKFd6zihqfSotnAzS7luNM5YNi5YFTHVom5BVFRbqza0MgkZHjY3nnuKlqXWpFYcu5A+GL263QrkrrnveoaZbP5KtDW9kQsvk/2yJfFEOjWW1qIO4gOlnhxP45lYabnoaYsdcOLW3Yzct1jmmabqJWaDtdSGzbw7wYY2g07eNsD99Q5we1BqDi5ufiJIF2aFYtHc9hU+FhGzRPtOIZorUrst4otP2vgVYJOTLxSDu0ebVKOyJkemDbdqS3QruXtl+N8llQZWjgd0LTxGCp09Ji8TIVhbLZNS97y9bieS/1EKFi/FegWaIJtUOrTtuwAMscbYeGp3DySySIk8H/BLRULEK0GaXzhz0VtC4KrM7jpj6wHVooQzYXCh8zZ38EmqNAk8YSB6kIblWZb7VNVgrYSwCK6cM2f2lzaNQYaZzmC2WfFPDfCa3ajPJ5bRWRZtTCZ3M0lnQ99Vt5T+2YnXGj3hO5BprLTqE9SDMAyZGKuTG/E5p23VLls+s9QNLUdxHbjxZPj8Ig9qjBqRTQrqhF7xfmt1kv8E50Cr4a8yXQkJ1CVD5xIabQ8sGCvLngyKRx8CuhlaZ0xfgY3j/MjJeo4R15tD8NZ8vLPqboxaTQbfI5YL5fDJrke1P7twhvKaeQvP9ia0J8TwZNtYuL8LoBQd7UFYPbXxKnVUajiorbIkv3+O4KKMUA1Y7sKy4/EFNSU7EVE7A95ZP+8z6xy0wiPsGN6D1V1jUU+iQEhsRM3QAILYK+BT4moXtSEmkYhvPY93GfzuKUsNkES99f4tbDwWJrxKRrdB5bhSPFZ+Aa8mFRF3nUsgwD3CcJa3hs8c1jjeZ/709JQptWi9RI/uPtdj766KOPPvroo2noHwdBOE8ZdMbsAAAAAElFTkSuQmCC" alt="Oracle">
-                </article>
-                <article class="cursosCont">
-                    <img class="cursosImg"src="https://www.horadecodar.com.br/wp-content/uploads/2020/05/HORADECODAR-1.png" alt="Hora de codar">
-                </article>
-            </div>
-        </section>
-        <section>
+        <section id="projectsSection">
             <h1 class="titles">Projetos recentes</h1>
             <div id="recentProjects" class="fadeOut">
                 <article class="projectsCont">
@@ -112,36 +86,28 @@
             </div>
         </section>
         <section id="contact">
-            <h1 class="titles">Contato</h1>
-            <form action="" name="" id="contactForm">
-                <fieldset id="nomeCelCont">
-                    <label for="Name">Nome</label>
-                    <input type="text" name="Name" id="nameInput">
-                    <label for="Telefone">Telefone</label>
-                    <input type="tel" name="Telefone" id="cellphoneInput">
-                </fieldset>
-                <fieldset id="emailAssuntoCont">
-                    <label for="Email">Email</label>
-                    <input type="email" name="Email" id="emailInput">
-                    <label for="Assunto">Assunto</label>
-                    <input type="text" name="Assunto" id="assuntoEmailInput">
-                </fieldset>
-                <fieldset id="campoMsg">
-                    <label for="Message">Mensagem</label>
-                    <textarea name="Message" id="MessageField"></textarea>
-                </fieldset>
-                <input type="submit" value="Enviar">              
-            </form>
+            <h1 id="contactTitle" class="titles">Contato</h1>
+            <div id="cardsContactCont">
+                <div class="contactCards" id="whatsappCard">
+                    <img id="whatsapp" class="imgContact" src="./img/whatsappLogo.png" alt="whatsapp"/>
+                    <p class="contactParag">Entre em contato comigo através do Whatsapp.<br/>Horario de atendimento: 08:00 ás 17:00.<br/><br/>(27)99863-4211</p>    
+                </div>
+                <div class="contactCards" id="gmailCard">
+                    <img class="imgContact" src="./img/gmailLogo.png" alt="gmail"/>
+                    <p class="contactParag">Entre em contato comigo por email.<br/>Horario de atendimento: 08:00 ás 17:00.<br/><br/>fabricio.alternativo@gmail.com</p>    
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <section id="socialMedia">
-            <a href="https://github.com/FabricioTP/"><img src="./img/icon-github.svg" alt="github"></a>
-            <a href="https://linkedin.com/in/fabrício-teixeira-ba87b8187"><img src="./img/icon-linkedIn.svg" alt="linkedin"></a>
+            <a href="https://github.com/FabricioTP/"><img class="mediaIcons" src="./img/icon-github.svg" alt="github"></a>
+            <a class="mediaIcons" href="https://linkedin.com/in/fabrício-teixeira-ba87b8187"><img class="mediaIcons" src="./img/icon-linkedIn.svg" alt="linkedin"></a>
         </section>
     </footer>
     <script src="./js/fade.js"></script>
     <script src="./js/audio.js"></script>
     <script src="./js/smoothScroll.js"></script>
+    <script src="./js/menuSelection.js"></script>
 </body>
-</html>
+</html

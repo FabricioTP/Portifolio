@@ -10,15 +10,11 @@ function abreMenu(){
     if(hamburgerMenu.textContent == "☰"){
         hamburgerMenu.textContent= "X"
         openMenu.play()
-        for(let i = 0; i < navLists.length; i++){
-            navLists[i].style.transform="translateX(0px)"
-        }
+        navBar.style.transform = "translateX(0px)"
     }else{
         hamburgerMenu.textContent = "☰"
         fechaMenu.play()
-        for(let i = 0; i < navLists.length; i++){
-            navLists[i].style.transform="translateX(800px)"
-        }
+        navBar.style.transform = "translateX(3000px)"
     }
 }
 hamburgerMenu.addEventListener("click", abreMenu)
