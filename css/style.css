@@ -22,7 +22,7 @@ header{
     display: none;
 }
 #navBar{
-    width: 80vw;
+    width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: flex-start;

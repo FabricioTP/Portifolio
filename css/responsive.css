@@ -106,7 +106,8 @@
     #logo{
         display: flex;
         justify-self: end;
-        font-size: 0.8em;
+        margin-left: 2%;
+        font-size: 1.3em;
         width: 28vw;
         color:white;
         text-shadow: #000 1px 1px;
@@ -148,7 +149,7 @@
     }
     li{
         margin-left: 2%;
-        font-size: 1em;
+        font-size: 1.2em;
     }
     #aboutMe :nth-child(1){
         grid-area: hello;
