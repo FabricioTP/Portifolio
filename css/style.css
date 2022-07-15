@@ -11,8 +11,8 @@ header{
     height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    font-size: 1.5em;
+    justify-content: space-between;
+    font-size: 1.1em;
     background: rgb(72, 171, 228);
     transition: all 0.5s;
     overflow: hidden;
