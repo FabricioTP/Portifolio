@@ -106,15 +106,15 @@
     #logo{
         display: flex;
         justify-self: end;
-        font-size: 1.3em;
-        width: 20vw;
-        margin-right: 30%;
+        font-size: 0.8em;
+        width: 28vw;
         color:white;
         text-shadow: #000 1px 1px;
     }
     #aboutMe{
-        margin: 0;
+        height: 80vh;
         padding: 0;
+        margin: 0;
         display: grid;
         grid-template-areas: 
         "hello hello"
@@ -123,13 +123,14 @@
     }
     #skillsSection{
         display: none;
+        height: 100%;
     }
     #nextSkillSection{
         display: none;
     }
     #projectsSection{
-        width: 80%;
-        height: 95%;
+        width: 55%;
+        height: 80vh;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -137,7 +138,7 @@
 
     }
     #contact{
-        height: 100%;
+        height: 80vh;
         display: none;
         justify-content: space-around;
         flex-direction: column;
@@ -163,33 +164,26 @@
         grid-area: text;
     }
     #skills{
+        height: 100%;
         display: grid;
         grid-template-columns: repeat(3 1fr);
         justify-items: center;
         align-items: center;
     }
     .imgSkillsCont{
-        flex-direction: row;
+        width: 33vw;
+        flex-direction: column;
         justify-content: center;
-        padding: 5%;
+        margin-bottom: 0;
+        align-items: center;
+        padding: 1%;
         height: 50vh;
     }
-    .imgSkillsCont{
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 43vh;
-    }
-    .imgSkillsCont:nth-child(1){
-        grid-area: initial;
-    }
-    .imgSkillsCont:nth-child(2){
-        grid-area: initial;
-    }
-    .imgSkillsCont:nth-child(3){
+    .imgSkillsCont:nth-child(1),.imgSkillsCont:nth-child(2),.imgSkillsCont:nth-child(3){
         grid-area: initial;
     }
     .skillsParag{
-        font-size: 1em;
+        font-size: 0.9em;
     }
     .imgSkillsCont:nth-child(3){
         width: initial;
@@ -206,10 +200,11 @@
         display: flex;
         width: 50vw;
         height: 20vh;
+        margin: 0;
     }
     .projectsImg{
         width: 80%;
-        height: 100%;
+        height: 80%;
     }
     #contactTitle{
         display: flex;
@@ -253,7 +248,7 @@
         padding: 2%;
     }
     #gmailCard:hover{
-        width: 30vw;
+        width: 40vw;
         font-size: 1em;
         transform: translateY(-20%);
         background-color: rgb(72, 171, 228);
@@ -273,6 +268,10 @@
         width: 15vw;
         height: 15vh;
         border-radius: 50%;
+    }
+    #gmailLogo{
+        padding-right: 5%;
+        width: 12vw;
     }
     #socialMedia{
         height: 100%;

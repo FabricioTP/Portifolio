@@ -35,7 +35,7 @@ header{
     transform: translateX(3000px);
 }
 li{
-    font-size: 19px;
+    font-size: 18px;
     transition: all 1s;
 }
 a{
